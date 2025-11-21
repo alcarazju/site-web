@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #036c76;
+  color:#013a3f;
   text-decoration: none;
   margin:20px;
 } /*liens*/
@@ -86,7 +86,7 @@ li {
 
 .cta {
   background: none; /*linear-gradient(#f9f0d5, #fda06a);*/
-  color: #fda06a;
+  color:#013a3f;
   border-radius: 5px;
   border: none;
   font-family: 'Karla';
