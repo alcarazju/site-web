@@ -28,7 +28,7 @@ if (!empty($_POST)) {
         $headers = "De : <$email>";
 
         // Envoyer l'email
-        if (mail($recipient, $subject, $headers)) {
+        if (mail($recipient, $subject, $message, $headers)) {
             echo "Email envoyé avec succès !";
         } else {
             echo "Échec de l'envoi de l'email. Veuillez réessayer plus tard.";
