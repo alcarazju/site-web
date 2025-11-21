@@ -25,7 +25,7 @@ if (!empty($_POST)) {
         $recipient = "martin.fontbonne@proton.me";
 
         // En-têtes supplémentaires
-        $headers = "De : <$email>";
+        $headers = "De : $fname $lname <$email>";
 
         // Envoyer l'email
         if (mail($recipient, $subject, $message, $headers)) {
