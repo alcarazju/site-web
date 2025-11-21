@@ -1,0 +1,239 @@
+body {
+  font-family: 'Karla';
+  font-size: 0.8em;
+  background-color:#036c76;/* #bfd4fd;*/
+}
+
+a {
+  color: #036c76;
+  text-decoration: none;
+  margin:20px;
+} /*liens*/
+
+
+a:hover
+{
+  text-decoration: underline;
+} /*en surpassant les liens avec la souris*/
+
+em {
+  color: #a5b4fc;
+  font-style: normal;
+} /*important=référencement dans moteur de recherche*/
+
+h1 {
+  font-size: 3.5em;
+  color: #f9f0d5;
+  font-family: 'Montez';
+  margin:"auto";
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+} /*titre de niveau 1*/
+
+h2 {
+  color: #f9f0d5;
+  margin:"center";
+  font-family: 'Montez';
+  font-size: 2.5em;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+} /*titre de niveau 2*/
+
+p {
+  font-size: 1.5em;
+  color: #e7d6b9;
+  margin:"auto";
+  width:"auto";
+} /*paragraphes de texte*/
+
+li {
+  font-size: 1.5em;
+  color: #e7d6b9;
+  margin:"auto";
+  
+} /*liste*/
+
+.entete,
+.pied-de-page {
+  background-color: #f9f0d5;
+  margin:"auto";
+  border-radius: 5px;
+  padding-bottom: 20px;
+  padding-top:20px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.menu{
+  font-family: 'Montez';
+  font-size: 3em;  
+  border-radius: 5px;
+  background-color: #fda06a;
+  padding:1px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+
+
+
+/* .pied-de-page:hover{
+  opacity:0.5;
+} */
+
+
+.cta {
+  background: none; /*linear-gradient(#f9f0d5, #fda06a);*/
+  color: #fda06a;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Karla';
+  font-size: 1.5em;
+  /* padding:50%; */
+  /* float: center; */
+  float: right;
+  margin-top: 20px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+}
+
+.cta:hover{
+  /* background: linear-gradient(#8e897a,#955e3e);*/
+  text-decoration: underline; 
+}
+
+.carre-contenu {
+  padding:50px;
+  /*width:50%;*/
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+  font-family:"Karla";
+  font-size: 1em;
+  flex-wrap:wrap;
+}
+
+.carre2 {
+  padding:50px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:wrap
+}
+
+.qui_suis-je{
+  /* height: 302.4px; */
+  width:auto;
+}
+
+.grille_photos {
+  padding:50px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  font-family:"Montez";
+  flex-wrap:wrap;
+}
+
+.grille_photos2{
+  padding:50px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap: 15px;
+  font-family:"Montez";
+  flex-wrap:wrap;
+}
+
+.banniere{
+   /*width:4400 px;
+   height:485 px;*/
+   /*background: url('images/logo_la_feuille_en_folie_banniere.png');*/
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img_Juliette{
+  width: 403.2px;
+  height: 302.4px;
+}
+
+.img{
+  width: 403.2px;
+  height: "auto";
+}
+
+.logo_small{
+  width: 2em;
+  height: auto;
+}
+
+
+
+
+/* formulaire de contact */
+label {
+  font-family: "Montez";
+  font-size: 1.5em;
+  color: #f9f0d5;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+} /*Eviter que l'OS impose son thème*/
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+  background-color: #036c76;
+  color: #f9f0d5;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: none;
+  border-top: 3px solid #f9f0d5; /* black border */
+  /* border-radius: 4px; Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 30px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */  
+  font-family: 'Karla';  
+  font-size: 1.3em;
+  transition: background-color 0.1s ease-in-out;
+  
+}
+
+input[type=text]:focus,input[type=email]:focus, select:focus, textarea:focus {
+  background-color: #013a3f;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #036c76;
+  color: #f9f0d5;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;  
+  font-family: 'Montez';  
+  font-size: 3em;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #036c76;
+  text-decoration: underline;
+  /* border: none; */
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #036c76;
+  padding: 20px;
+} 

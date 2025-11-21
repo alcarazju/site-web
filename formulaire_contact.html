@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title>Formulaire de contact - La feuille en folie</title>
+    <link rel="icon" href"images/logo_la_feuille_en_folie_site_internet_Copie.png">
+    <link href="style.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montez&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="entete">
+            <img src="images/logo_la_feuille_en_folie_banniere.jpeg" alt="Logo La feuille en folie" class="banniere">
+        </div>
+        
+    </header>
+    <nav>
+    <div class="menu"> 
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">Qui suis-je?</a>
+            <a href="mariage.html">Mariage</a>
+            <a href="voyages.html">Voyage</a>
+            <a href="naissances.html">Naissance</a>
+        </div>
+    </nav>
+
+    <main>
+         <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Prénom</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dominique">
+
+    <label for="lname">Nom de famille</label>
+    <input type="text" id="lname" name="lastname" placeholder="Patatine">
+
+    <label for="email">Adresse e-mail</label>
+    <input type="email" id="email" name="email" placeholder="dominique.patatine@mail.com" required>
+
+    <label for="theme">Thème</label>
+    <select id="theme" name="theme" placeholder="test">
+        <optgroup style="font-family: Karla;">
+      <option value="mariage">Mariage</option>
+      <option value="naissance">Naissance</option>
+      <option value="voyage">Voyage</option>
+      <option value="autre">Autre</option>
+        </optgroup>
+
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Bonjour, s'il vous plait, merci, au revoir !" style="height:100px" required></textarea>
+
+    <input type="submit" value="Envoyer">
+
+        </form>
+    </div> 
+    </main>
+
+        <footer>
+        <div class="pied-de-page">
+            <img src="images/logo_la_feuille_en_folie_site_internet.jpeg" alt="Logo La feuille en folie" class="logo_small">
+            <a target="_blank" href="https://www.instagram.com/juliette_alcaraz?igsh=MXU0d2g4ZngyNWt20Q==">
+            <img src="images/Instagram_Glyph_Gradient.png" alt="Logo Instagram" class="logo_small">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
