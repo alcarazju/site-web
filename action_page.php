@@ -3,11 +3,11 @@
 $errors = [];
 
 if (!empty($_POST)) {
-  $subject = $_POST['subject'];
+  $message = $_POST['message'];
   $email = $_POST['email'];
  
-  if (empty($subject)) {
-      $errors[] = 'Vous n'avez pas entré de message !';
+  if (empty($message)) {
+      $errors[] = 'Vous n\'avez pas entré de message !';
   }
 
   if (empty($email)) {
@@ -18,6 +18,8 @@ if (!empty($_POST)) {
 }
 
     // Si pas d'erreurs, envoyer l'email
+
+    $subject = "[<$theme>] Contact";
     if (empty($errors)) {
         // Adresse email du destinataire (remplacez par la vôtre)
         $recipient = "martin.fontbonne@proton.me";
@@ -37,8 +39,7 @@ if (!empty($_POST)) {
         foreach ($errors as $error) {
             echo "- $error<br>";
         }
-    }
-} else {
+    } else {
     // Pas une requête POST, afficher une erreur 403 forbidden
     header("HTTP/1.1 403 Forbidden");
     echo "Vous n'êtes pas autorisé à accéder à cette page.";
