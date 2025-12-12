@@ -41,6 +41,16 @@ h2 {
   justify-content:center;
 } /*titre de niveau 2*/
 
+h3 {
+  color: #f9f0d5;
+  margin:"center";
+  font-family: 'Montez';
+  font-size: 1.75em;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+} /*titre de niveau 3*/
+
 p {
   font-size: 1.5em;
   font-family: 'Karla';
@@ -137,6 +147,7 @@ li {
   justify-content:space-around;
   font-family:"Montez";
   flex-wrap:wrap;
+  align-items: center;
 }
 
 .grille_photos2{
@@ -167,9 +178,11 @@ li {
 
 .img{
   width: 403.2px;
-  height: "auto";
+  height:100%;
   margin: 5px;
+  border-radius: 10px;
 }
+
 
 .logo_small{
   width: 2em;
