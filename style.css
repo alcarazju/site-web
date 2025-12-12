@@ -45,7 +45,7 @@ p {
   font-size: 1.5em;
   font-family: 'Karla';
   color: #e7d6b9;
-  margin:"auto";
+  margin:100px;
   width:"auto";
 } /*paragraphes de texte*/
 
@@ -238,3 +238,15 @@ input[type=submit]:hover {
   background-color: #036c76;
   padding: 20px;
 } 
+
+.categories{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20 px;
+}
+.prod_carterie{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20 px;}
